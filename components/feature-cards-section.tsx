@@ -10,28 +10,28 @@ import {
 
 const features = [
   {
-    label: "LIVE",
-    title: "Launch. Ethereum Attestation.",
+    label: "LIVE (PREVIEW)",
+    title: "OMAChain and OMA",
     description:
-      "OMATrust launches on OMAChain, delivering an attestation service for Ethereum with 8 verifiable schemas. Production-ready infrastructure for decentralized trust.",
+      "OMATrust runs on OMAChain, OMA3's new Layer 2 powered by the OMA token.  OMAChain allows OMA3 to bring web2 simplicity to decentralized trust.",
     icon: BadgeCheck,
     href: "#",
     accentColor: "hsl(186 100% 50%)",
   },
   {
     label: "COMING SOON",
-    title: "Identity Registry. Audited.",
+    title: "OMATrust Identity Registry",
     description:
-      "A standards-based identity registry on OMAChain, currently under audit and coming soon for public use. Institutional-grade identity verification at scale.",
+      "A standards-based identity registry coming soon on OMAChain. The OMATrust Registry extends ERC-8004 to bring app store-level trust to identity and discoverability.",
     icon: IdCard,
     href: "https://registry.omatrust.org",
     accentColor: "hsl(220 80% 60%)",
   },
   {
-    label: "EXPANDING",
-    title: "Cross-Chain Attestations",
+    label: "COMING SOON",
+    title: "Cross-Chain Support",
     description:
-      "OMATrust schemas are designed for deployment on any EAS-compatible chain, enabling portable trust signals across ecosystems while maintaining consistent governance and standards alignment.",
+      "OMATrust can be deployed on any EAS-compatible chain, enabling portable trust signals across ecosystems. OMATrust schemas can be deployed to non-EAS attestations easily.",
     icon: Network,
     href: "#",
     accentColor: "hsl(260 65% 55%)",

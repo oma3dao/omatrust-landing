@@ -32,8 +32,8 @@ export function Footer() {
   return (
     <footer className="relative border-t border-border bg-card/30">
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+        {/* TODO: Re-enable logo area and link columns when real pages exist
         <div className="flex flex-col md:flex-row justify-between gap-12">
-          {/* Logo area */}
           <div className="flex flex-col gap-4 md:max-w-xs">
             <div className="flex items-center gap-3">
               <Image
@@ -49,7 +49,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Link columns */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:gap-16">
             {footerColumns.map((column) => (
               <div key={column.title}>
@@ -74,10 +73,10 @@ export function Footer() {
             ))}
           </div>
         </div>
+        */}
 
         {/* Bottom bar */}
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-border/50">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
             <Image
               src="/images/oma3-logo.svg"
               alt="OMA3 logo"
@@ -86,17 +85,8 @@ export function Footer() {
               className="h-4 w-auto opacity-90"
             />
             <p className="text-xs text-zinc-400">
-              {"OMATrust is a project of OMA3. All rights reserved."}
+              {"© 2026 OMA3. All rights reserved."}
             </p>
-          </div>
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-xs text-zinc-400 underline-offset-4 hover:text-foreground hover:underline transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="text-xs text-zinc-400 underline-offset-4 hover:text-foreground hover:underline transition-colors">
-              Terms
-            </a>
-          </div>
         </div>
       </div>
     </footer>

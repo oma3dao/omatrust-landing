@@ -21,7 +21,7 @@ const governancePoints = [
   {
     title: "Standards-Led Development",
     description:
-      "Governance aligns with emerging standards including EAS-compatible deployments, x402, and ERC-8004.",
+      "OMA3 follows a standards development process adopted by the most successful consortiums in the world.",
   },
 ]
 
@@ -58,14 +58,14 @@ export function GovernanceSection() {
             GOVERNANCE
           </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground text-balance">
-            Credibly neutral by design.
+            Credibly neutral by design
           </h2>
           <p className="mt-5 text-lg text-zinc-200 leading-relaxed max-w-3xl mx-auto">
-            OMATrust is governed by OMA3, a Swiss association structured for
-            credible neutrality and long-term stewardship of open trust
-            infrastructure. This model ensures transparency and
-            multi-stakeholder participation across chains, platforms, and
-            jurisdictions.
+            OMATrust is governed by OMA3, a Swiss association structured for credible neutrality and open, 
+            multi-stakeholder decision-making. OMA3 follows a consortium model similar to organizations 
+            such as the Linux Foundation and W3C, providing long-term stewardship of shared infrastructure. 
+            This structure distributes influence across participants and prevents any single entity 
+            from controlling the trust layer.         
           </p>
         </div>
 

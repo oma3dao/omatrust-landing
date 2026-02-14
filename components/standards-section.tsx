@@ -4,19 +4,34 @@ import { useEffect, useRef, useState } from "react"
 
 const standards = [
   {
-    name: "Ethereum Attestation Service",
+    name: "W3C DID",
     shape: "circle",
-    description: "Schema-based attestation service",
+    description: "Agent identity and reputation standard",
+    href: "https://www.w3.org/TR/did-core/",
+  },
+  {
+    name: "JSON Schema",
+    shape: "circle",
+    description: "Data validation and documentation standard",
+    href: "https://json-schema.org/",
   },
   {
     name: "x402",
-    shape: "triangle",
+    shape: "circle",
     description: "Internet-native payment standard",
+    href: "https://www.x402.org/",
   },
   {
     name: "ERC-8004",
-    shape: "square",
+    shape: "circle",
     description: "Agent identity and reputation standard",
+    href: "https://github.com/erc-8004/erc-8004-contracts",
+  },
+  {
+    name: "Ethereum Attestation Service",
+    shape: "circle",
+    description: "Schema-based attestation service",
+    href: "https://attest.org/",
   },
 ]
 
@@ -53,7 +68,7 @@ export function StandardsSection() {
             Compatibility with standards
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-7 max-w-2xl">
-            OMATrust aligns with global standards like x402 and ERC-8004, and is designed for seamless developer integration and compliance with evolving frameworks.
+            OMATrust aligns with emerging agentic standards like x402 and ERC-8004, as well as established standards like W3C DID, JSON Schema, and many more.
           </p>
         </div>
 
@@ -64,8 +79,11 @@ export function StandardsSection() {
           }`}
         >
           {standards.map((std) => (
-            <div
+            <a
               key={std.name}
+              href={std.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-3 rounded-full border border-border bg-card px-5 py-3 transition-all hover:border-primary/30 hover:bg-primary/5"
             >
               {/* Shape indicator */}
@@ -85,7 +103,7 @@ export function StandardsSection() {
               <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
                 {std.name}
               </span>
-            </div>
+            </a>
           ))}
         </div>
       </div>

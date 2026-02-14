@@ -8,11 +8,8 @@ import { statusPillClass } from "./landing-ui-tokens"
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-x-hidden pt-28 pb-16 md:pt-32 md:pb-20">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-      >
+      {/* Background layers (intentionally no image asset) */}
+      <div className="absolute inset-0">
         {/* Overlay gradients for depth */}
         <div className="absolute inset-0 bg-background/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
@@ -37,7 +34,7 @@ export function HeroSection() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
           </span>
-          LIVE ON OMACHAIN PREVIEW
+          LIVE ON OMACHAIN
         </div>
 
         {/* Main headline */}
@@ -52,7 +49,7 @@ export function HeroSection() {
           className="mt-1 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground leading-7 animate-fade-in-up"
           style={{ animationDelay: "0.3s" }}
         >
-          A decentralized trust layer governed by OMA3- a credibly neutral Swiss consortium- delivering attestations and reputation for the machine driven internet.
+          A decentralized trust layer delivering attestations and reputation for the machine driven internet.
         </p>
 
         {/* CTA buttons */}

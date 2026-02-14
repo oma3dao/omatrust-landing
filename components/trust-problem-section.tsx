@@ -38,7 +38,7 @@ export function TrustProblemSection() {
               THE PROBLEM
             </span>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground leading-[1.1] text-balance">
-              The open internet has a trust deficit.
+              The open internet has a trust deficit
             </h2>
             {/* Animated accent line */}
             <div className="mt-6 h-1 w-24 rounded-full animated-gradient-line" />
@@ -51,10 +51,10 @@ export function TrustProblemSection() {
             }`}
           >
             <p className="text-lg text-muted-foreground leading-7">
-              Despite rapid digital transformation, the open internet struggles with credible, neutral trust for users, agents, and services. There is no shared infrastructure for attestation, verification, or reputation that works across platforms, chains, and jurisdictions.
+              Despite rapid growth, the open internet still struggles with trust. There is no universal reputation system that works across all service types and platforms.
             </p>
             <p className="mt-6 text-lg text-muted-foreground leading-7">
-              OMATrust addresses systemic integrity, provenance, and verification challenges for the next phase of internet coordination — where AI agents, decentralized services, and traditional platforms must interoperate with trust.
+              OMATrust is a shared trust layer for all internet-native services, not just marketplaces and app stores.
             </p>
           </div>
         </div>

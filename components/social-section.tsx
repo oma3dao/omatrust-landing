@@ -30,7 +30,7 @@ const socialLinks = [
   {
     icon: Globe,
     title: "OMA3.org",
-    href: "https://oma3.org",
+    href: "https://oma3.org/join",
   },
 ]
 
