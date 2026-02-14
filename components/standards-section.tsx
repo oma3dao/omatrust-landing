@@ -4,24 +4,19 @@ import { useEffect, useRef, useState } from "react"
 
 const standards = [
   {
-    name: "OMA3",
-    shape: "square",
-    description: "Consortium governance",
-  },
-  {
-    name: "Reputation Framework",
+    name: "Ethereum Attestation Service",
     shape: "circle",
-    description: "Trust scoring layer",
+    description: "Schema-based attestation service",
   },
   {
     name: "x402",
     shape: "triangle",
-    description: "Payment standard",
+    description: "Internet-native payment standard",
   },
   {
     name: "ERC-8004",
     shape: "square",
-    description: "Token standard",
+    description: "Agent identity and reputation standard",
   },
 ]
 

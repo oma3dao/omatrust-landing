@@ -56,18 +56,33 @@ export function TrustProblemSection() {
             <p className="mt-6 text-lg text-muted-foreground leading-7">
               OMATrust addresses systemic integrity, provenance, and verification challenges for the next phase of internet coordination — where AI agents, decentralized services, and traditional platforms must interoperate with trust.
             </p>
+          </div>
+        </div>
 
-            {/* Key stats or facts */}
-            <div className="mt-10 grid grid-cols-2 gap-6">
-              <div className="border-l-2 border-primary/30 pl-4">
-                <div className="text-2xl font-bold text-foreground">8</div>
-                <div className="text-sm text-zinc-400">Verifiable schemas live</div>
-              </div>
-              <div className="border-l-2 border-primary/30 pl-4">
-                <div className="text-2xl font-bold text-foreground">OMA3</div>
-                <div className="text-sm text-zinc-400">Swiss governance</div>
-              </div>
-            </div>
+        {/* Diagnostic blocks */}
+        <div
+          className={`mt-14 grid gap-6 md:grid-cols-2 transition-all duration-1000 delay-300 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <div className="border-l-2 border-primary/30 pl-5 pr-2">
+            <h3 className="text-xl font-semibold text-foreground leading-tight">
+              Fragmented Trust Signals
+            </h3>
+            <p className="mt-3 text-base text-zinc-300 leading-relaxed">
+              Attestations and reputation systems exist in silos across chains
+              and platforms, with no shared verification layer.
+            </p>
+          </div>
+          <div className="border-l-2 border-primary/30 pl-5 pr-2">
+            <h3 className="text-xl font-semibold text-foreground leading-tight">
+              No Trust for Internet-Native Services
+            </h3>
+            <p className="mt-3 text-base text-zinc-300 leading-relaxed">
+              Existing trust models focus on e-commerce and app stores. APIs,
+              websites, and decentralized services lack standardized,
+              verifiable trust signals.
+            </p>
           </div>
         </div>
       </div>

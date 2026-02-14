@@ -1,17 +1,20 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
-import { ArrowUpRight, Shield, Fingerprint, Scale } from "lucide-react"
+import { ArrowUpRight, BadgeCheck, IdCard, Network } from "lucide-react"
+import {
+  resourceIconBadgeClass,
+  resourceIconClass,
+  statusPillClass,
+} from "./landing-ui-tokens"
 
 const features = [
   {
-    label: "LIVE NOW",
+    label: "LIVE",
     title: "Launch. Ethereum Attestation.",
     description:
       "OMATrust launches on OMAChain, delivering an attestation service for Ethereum with 8 verifiable schemas. Production-ready infrastructure for decentralized trust.",
-    image: "/images/card-attestation.jpg",
-    icon: Shield,
+    icon: BadgeCheck,
     href: "#",
     accentColor: "hsl(186 100% 50%)",
   },
@@ -20,19 +23,17 @@ const features = [
     title: "Identity Registry. Audited.",
     description:
       "A standards-based identity registry on OMAChain, currently under audit and coming soon for public use. Institutional-grade identity verification at scale.",
-    image: "/images/card-registry.jpg",
-    icon: Fingerprint,
+    icon: IdCard,
     href: "https://registry.omatrust.org",
     accentColor: "hsl(220 80% 60%)",
   },
   {
-    label: "GOVERNANCE",
-    title: "OMA3. Swiss Association.",
+    label: "EXPANDING",
+    title: "Cross-Chain Attestations",
     description:
-      "OMATrust is governed by OMA3, a Swiss association ensuring neutrality, security, and open governance. No single entity controls the trust layer.",
-    image: "/images/card-governance.jpg",
-    icon: Scale,
-    href: "https://oma3.org",
+      "OMATrust schemas are designed for deployment on any EAS-compatible chain, enabling portable trust signals across ecosystems while maintaining consistent governance and standards alignment.",
+    icon: Network,
+    href: "#",
     accentColor: "hsl(260 65% 55%)",
   },
 ]
@@ -76,61 +77,46 @@ export function FeatureCardsSection() {
                 href={feature.href}
                 target={feature.href.startsWith("http") ? "_blank" : undefined}
                 rel={feature.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-700 hover:border-primary/30 hover:shadow-[0_0_50px_-12px_hsl(186_100%_50%_/_0.15)] ${
+                className={`group relative flex min-h-[340px] flex-col rounded-2xl border border-border bg-card p-8 transition-all duration-700 hover:border-primary/30 hover:shadow-[0_0_50px_-12px_hsl(186_100%_50%_/_0.15)] ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-12"
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                {/* Card image */}
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src={feature.image}
-                    alt={feature.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
-
-                  {/* Status badge */}
-                  <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-background/80 backdrop-blur-sm px-3 py-1 text-[10px] font-mono tracking-widest text-primary border border-primary/20">
-                    {feature.label === "LIVE NOW" && (
-                      <span className="relative flex h-1.5 w-1.5">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary" />
-                      </span>
-                    )}
-                    {feature.label}
-                  </div>
-
-                  {/* External arrow */}
-                  <div className="absolute top-4 right-4 rounded-full bg-background/60 backdrop-blur-sm p-2 opacity-0 -translate-y-2 transition-all group-hover:opacity-100 group-hover:translate-y-0">
-                    <ArrowUpRight size={14} className="text-primary" />
-                  </div>
-                </div>
-
                 {/* Card body */}
-                <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-3 flex items-center gap-3">
-                    <div
-                      className="flex items-center justify-center rounded-lg p-2"
-                      style={{
-                        backgroundColor: `${feature.accentColor.replace(")", " / 0.1)")}`,
-                      }}
-                    >
-                      <Icon size={18} style={{ color: feature.accentColor }} />
-                    </div>
+                <div className="flex flex-1 flex-col items-start">
+                  <div>
+                    <span className={statusPillClass}>
+                      {feature.label === "LIVE" && (
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                        </span>
+                      )}
+                      {feature.label}
+                    </span>
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground leading-tight">
+
+                  <div className={`mt-5 ${resourceIconBadgeClass}`}>
+                    <Icon
+                      size={32}
+                      strokeWidth={1.5}
+                      className={resourceIconClass}
+                      style={{ color: feature.accentColor }}
+                    />
+                  </div>
+
+                  <h3 className="mt-5 text-xl font-semibold text-foreground leading-tight">
                     {feature.title}
                   </h3>
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed flex-1">
+                  <p className="mt-4 text-base text-zinc-200 leading-relaxed flex-1">
                     {feature.description}
                   </p>
 
-                  {/* Hover underline */}
-                  <div className="mt-4 h-px w-0 bg-primary transition-all duration-500 group-hover:w-full" />
+                  <div className="mt-6 inline-flex items-center gap-1 text-xs text-primary/80 opacity-0 transition-all group-hover:opacity-100">
+                    Learn more <ArrowUpRight size={12} />
+                  </div>
                 </div>
               </a>
             )

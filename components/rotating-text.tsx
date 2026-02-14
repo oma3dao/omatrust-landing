@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react"
 
+const ROTATE_DURATION_MS = 2000
+
 const phrases = [
   "Online Services",
   "Websites",
@@ -12,12 +14,6 @@ const phrases = [
   "MCP",
   "A2A",
   "Smart Contracts",
-  "AI Agents",
-  "Wallets",
-  "Exchanges",
-  "Marketplaces",
-  "DeFi Protocols",
-  "Identity Providers",
 ]
 
 export function RotatingText() {
@@ -26,17 +22,18 @@ export function RotatingText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % phrases.length)
-    }, 3000)
+    }, ROTATE_DURATION_MS)
 
     return () => clearInterval(interval)
   }, [])
 
   return (
-    <span className="relative inline-block min-h-[1.25em] align-bottom min-w-[220px] md:min-w-[320px]">
+    <span className="relative inline-block min-h-[1.1em] overflow-hidden align-baseline min-w-[220px] md:min-w-[320px]">
       <span
         key={currentIndex}
         className="inline-block animate-hero-rotate"
         style={{
+          animationDuration: `${ROTATE_DURATION_MS}ms`,
           background: "linear-gradient(135deg, hsl(186 100% 50%), hsl(220 80% 60%))",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",

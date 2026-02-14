@@ -3,6 +3,7 @@
 import { ParticleField } from "./particle-field"
 import { RotatingText } from "./rotating-text"
 import { ArrowRight } from "lucide-react"
+import { statusPillClass } from "./landing-ui-tokens"
 
 export function HeroSection() {
   return (
@@ -31,12 +32,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
         {/* Status badge */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-xs font-mono tracking-wider text-primary backdrop-blur-sm animate-fade-in-up">
+        <div className={`${statusPillClass} mb-8 animate-fade-in-up`}>
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
           </span>
-          LIVE ON OMACHAIN
+          LIVE ON OMACHAIN PREVIEW
         </div>
 
         {/* Main headline */}
@@ -48,10 +49,10 @@ export function HeroSection() {
 
         {/* Subtitle */}
         <p
-          className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground leading-7 animate-fade-in-up"
+          className="mt-1 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground leading-7 animate-fade-in-up"
           style={{ animationDelay: "0.3s" }}
         >
-          A decentralized, institutional-grade trust layer governed by OMA3 — delivering attestation, identity, and reputation for the next phase of internet coordination.
+          A decentralized trust layer governed by OMA3- a credibly neutral Swiss consortium- delivering attestations and reputation for the machine driven internet.
         </p>
 
         {/* CTA buttons */}
@@ -60,12 +61,12 @@ export function HeroSection() {
           style={{ animationDelay: "0.5s" }}
         >
           <a
-            href="https://registry.omatrust.org"
+            href="https://docs.oma3.org"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"
           >
-            Explore the Registry
+            View Developer Docs
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
