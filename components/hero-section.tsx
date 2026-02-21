@@ -58,7 +58,7 @@ export function HeroSection() {
           style={{ animationDelay: "0.5s" }}
         >
           <a
-            href="https://docs.oma3.org"
+            href="https://docs.omatrust.org"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"

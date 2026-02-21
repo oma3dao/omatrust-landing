@@ -22,7 +22,7 @@ const developerLinks = [
     icon: FileText,
     title: "Developer Docs",
     description: "API references, SDKs, and integration guides",
-    href: "https://docs.oma3.org",
+    href: "https://docs.omatrust.org",
   },
   {
     icon: BookOpen,
