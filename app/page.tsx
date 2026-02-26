@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { TrustProblemSection } from "@/components/trust-problem-section"
+import { TrustSolutionSection } from "@/components/trust-solution-section"
 import { FeatureCardsSection } from "@/components/feature-cards-section"
 import { GovernanceSection } from "@/components/governance-section"
 import { StandardsSection } from "@/components/standards-section"
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <TrustProblemSection />
+      <TrustSolutionSection />
       <FeatureCardsSection />
       <GovernanceSection />
       <StandardsSection />

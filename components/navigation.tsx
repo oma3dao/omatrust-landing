@@ -14,6 +14,7 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
   { label: "Trust Problem", href: "#trust-problem" },
+  { label: "Solution", href: "#solution" },
   { label: "Launch", href: "#launch" },
   { label: "Governance", href: "#governance" },
   { label: "Developers", href: "#developers" },
