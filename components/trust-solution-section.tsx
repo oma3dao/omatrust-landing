@@ -6,7 +6,7 @@ import { ShieldCheck, Fingerprint, Layers } from "lucide-react"
 const solutionPillars = [
   {
     icon: ShieldCheck,
-    title: "Attestation Framework",
+    title: "Attestations",
     description:
       "OMATrust uses on-chain attestations to create verifiable trust signals for any internet-native service — apps, APIs, agents, and more. Attestations are structured, schema-based claims that can be independently verified by anyone.",
     accentColor: "hsl(186 100% 50%)",
@@ -62,11 +62,11 @@ export function TrustSolutionSection() {
             THE SOLUTION
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground leading-[1.1] text-balance">
-            An attestation layer for the open internet
+            A trust layer for the open internet
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-7 max-w-2xl mx-auto">
-            OMATrust replaces fragmented, platform-specific trust with a shared attestation framework.
-            Any service can earn, carry, and prove its reputation through verifiable on-chain attestations.
+            OMATrust replaces fragmented, platform-specific trust with a shared trust framework.
+            Any service can earn, carry, and prove its reputation through verifiable on-chain trust signals.
           </p>
         </div>
 

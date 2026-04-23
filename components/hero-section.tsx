@@ -51,26 +51,35 @@ export function HeroSection() {
         >
           A decentralized trust layer delivering attestations and reputation for the machine driven internet.
         </p>
+        <p
+          className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground leading-7 animate-fade-in-up"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Publish trust data on services <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Manage trust for your own services
+        </p>
 
         {/* CTA buttons */}
         <div
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
+          className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
           style={{ animationDelay: "0.5s" }}
         >
           <a
-            href="https://docs.omatrust.org"
+            href="https://app.omatrust.org/publish"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"
           >
-            View Developer Docs
+            Publish Trust
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
-            href="#trust-problem"
-            className="group inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-8 py-3.5 text-sm font-medium text-foreground transition-all hover:border-primary/30 hover:bg-secondary backdrop-blur-sm"
+            href="https://app.omatrust.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"
           >
-            Learn more
+            Manage Trust
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
 

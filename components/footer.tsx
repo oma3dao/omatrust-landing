@@ -5,7 +5,7 @@ const footerColumns = [
     title: "Product",
     links: [
       { label: "Overview", href: "#" },
-      { label: "Launch", href: "#launch" },
+      { label: "Infrastructure", href: "#infrastructure" },
       { label: "Registry", href: "https://registry.omatrust.org" },
       { label: "Docs", href: "#developers" },
     ],

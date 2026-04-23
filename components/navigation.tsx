@@ -13,10 +13,8 @@ type NavLink = {
 }
 
 const navLinks: NavLink[] = [
-  { label: "Trust Problem", href: "#trust-problem" },
-  { label: "Solution", href: "#solution" },
-  { label: "Launch", href: "#launch" },
-  { label: "Governance", href: "#governance" },
+  { label: "What It Does", href: "#trust-problem" },
+  { label: "How It's Used", href: "#use-cases" },
   { label: "Developers", href: "#developers" },
 ]
 
@@ -74,12 +72,12 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="https://reputation.omatrust.org"
+            href="https://app.omatrust.org?action=signin"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 text-sm font-medium text-primary hover:bg-primary/20 transition-all hover:border-primary/60"
           >
-            Attestation Portal
+            Sign In
           </a>
         </div>
 
@@ -109,12 +107,12 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="https://reputation.omatrust.org"
+            href="https://app.omatrust.org?action=signin"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 block text-center rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary"
           >
-            Attestation Portal
+            Sign In
           </a>
         </div>
       )}

@@ -54,7 +54,7 @@ export function FeatureCardsSection() {
   }, [])
 
   return (
-    <section id="launch" ref={sectionRef} className="relative py-24 md:py-32">
+    <section id="infrastructure" ref={sectionRef} className="relative py-24 md:py-32">
       {/* Section gradient accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px animated-gradient-line" />
 
