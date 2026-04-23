@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { FileText, Globe, BookOpen, ArrowUpRight } from "lucide-react"
+import { portalLink } from "@/lib/portal-url"
 
 function GithubIcon({ size = 24, className = "" }: { size?: number; className?: string }) {
   return (
@@ -28,7 +29,7 @@ const developerLinks = [
     icon: BookOpen,
     title: "Reputation Portal",
     description: "Submit, read, and manage OMATrust attestations on OMAChain",
-    href: "https://reputation.omatrust.org",
+    href: portalLink("/"),
   },
   {
     icon: Globe,

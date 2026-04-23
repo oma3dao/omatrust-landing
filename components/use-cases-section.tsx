@@ -2,32 +2,38 @@
 
 import { useEffect, useRef, useState } from "react"
 import { ArrowRight } from "lucide-react"
+import { portalLink } from "@/lib/portal-url"
 
 const useCases = [
   {
     title: "Verify x402 Receipts",
     description: "Confirm that signed receipts come from authorized services",
-    href: "https://app.omatrust.org/publish?type=receipt",
+    href: portalLink("/publish?type=key-binding"),
   },
   {
     title: "Authorize Service Keys",
     description: "Bind signing keys to your service identity",
-    href: "https://app.omatrust.org/publish?type=key-binding",
+    href: portalLink("/publish?type=key-binding"),
   },
   {
     title: "Publish Security Audits",
     description: "Make security audits verifiable and portable across platforms",
-    href: "https://app.omatrust.org/publish?type=security-assessment",
+    href: portalLink("/publish?type=security-assessment"),
   },
   {
     title: "Issue Certifications",
     description: "Create verifiable certifications for applications and services",
-    href: "https://app.omatrust.org/publish?type=certification",
+    href: portalLink("/publish?type=certification"),
   },
   {
-    title: "Enable Portable Reviews",
-    description: "Publish and respond to user reviews across platforms",
-    href: "https://app.omatrust.org/publish?type=user-review",
+    title: "Submit User Reviews",
+    description: "Publish verifiable reviews and ratings for apps and services",
+    href: portalLink("/publish?type=user-review"),
+  },
+  {
+    title: "Link Identities",
+    description: "Attest that two social accounts are under your ownership",
+    href: portalLink("/publish?type=linked-identifier"),
   },
 ]
 

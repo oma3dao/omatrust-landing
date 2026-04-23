@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { portalLink } from "@/lib/portal-url"
 
 const OMA3_LOGO_SRC: string | null = null
 // TODO: Set to "/oma3-logo.svg" (or your preferred path in /public) after uploading the oma3 SVG asset.
@@ -72,7 +73,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="https://app.omatrust.org?action=signin"
+            href={portalLink("/?action=signin")}
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 text-sm font-medium text-primary hover:bg-primary/20 transition-all hover:border-primary/60"
@@ -107,7 +108,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="https://app.omatrust.org?action=signin"
+            href={portalLink("/?action=signin")}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 block text-center rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary"
