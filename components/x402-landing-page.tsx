@@ -600,17 +600,17 @@ function LevelsSection() {
       label: "LEVEL 1",
       title: "Your domain proves your keys",
       description:
-        "Host a DID document at your domain listing your authorized signing keys. Any receipt signed by an unlisted key fails authorization \u2014 even if the signature is valid.",
+        "Create a DNS TXT record or host a DID document at your domain listing your authorized signing keys. Any receipt signed by an unlisted key fails authorization \u2014 even if the signature is valid.",
       detail: "Prevents unrelated signers from claiming a service identity. Gives verifiers a live ownership check.",
     },
     {
       icon: History,
       accentColor: "hsl(156 84% 55%)",
       label: "LEVEL 2",
-      title: "Your reputation survives outages",
+      title: "Durable key authorization",
       description:
-        "A Controller Witness provides an independent authorization record. Verification continues even when your own endpoint is unavailable.",
-      detail: "Eliminates single points of failure in the trust chain. Receipts remain verifiable during CDN outages or DNS issues.",
+        "A Controller Witness creates a historical authorization record on the blockchain. Verification continues even when your own endpoint is unavailable or you rotate your keys.",
+      detail: "Receipts remain verifiable during CDN outages or DNS issues. Past signatures are still valid even when the key is not listed anymore.",
     },
     {
       icon: Building2,
@@ -630,10 +630,10 @@ function LevelsSection() {
         <div className={`mx-auto max-w-3xl text-center transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs font-mono tracking-[0.2em] text-primary mb-4 block">PROGRESSIVE AUTHORIZATION</span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground leading-[1.1] text-balance">
-            Three levels of trust protection
+            Three levels of key authorization
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-7 max-w-2xl mx-auto">
-            Each level addresses a specific failure mode. Start with DNS binding and add layers as your security requirements grow.
+            Each level addresses a specific failure mode. Start with Level 1 and add layers as your security requirements grow.
           </p>
         </div>
 
