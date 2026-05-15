@@ -6,34 +6,40 @@ import { portalLink } from "@/lib/portal-url"
 
 const useCases = [
   {
-    title: "Verify x402 Receipts",
+    title: "x402 Signed Receipts",
     description: "Confirm that signed receipts come from authorized services",
-    href: portalLink("/publish?type=key-binding"),
+    href: "/x402",
+    linkText: "Learn more",
   },
   {
     title: "Authorize Service Keys",
     description: "Bind signing keys to your service identity",
     href: portalLink("/publish?type=key-binding"),
+    linkText: "Get Started",
   },
   {
     title: "Publish Security Audits",
     description: "Make security audits verifiable and portable across platforms",
     href: portalLink("/publish?type=security-assessment"),
+    linkText: "Get Started",
   },
   {
     title: "Issue Certifications",
     description: "Create verifiable certifications for applications and services",
     href: portalLink("/publish?type=certification"),
+    linkText: "Get Started",
   },
   {
     title: "Submit User Reviews",
     description: "Publish verifiable reviews and ratings for apps and services",
     href: portalLink("/publish?type=user-review"),
+    linkText: "Get Started",
   },
   {
     title: "Link Identities",
     description: "Attest that two social accounts are under your ownership",
     href: portalLink("/publish?type=linked-identifier"),
+    linkText: "Get Started",
   },
 ]
 
@@ -95,11 +101,11 @@ export function UseCasesSection() {
               </p>
               <a
                 href={useCase.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={useCase.href.startsWith("http") ? "_blank" : undefined}
+                rel={useCase.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="mt-4 inline-flex items-center gap-1 text-sm text-primary underline-offset-4 hover:underline"
               >
-                Get Started
+                {useCase.linkText}
                 <ArrowRight size={14} />
               </a>
             </div>
