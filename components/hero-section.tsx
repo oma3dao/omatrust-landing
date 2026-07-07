@@ -50,7 +50,7 @@ export function HeroSection() {
           className="mt-1 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground leading-7 animate-fade-in-up"
           style={{ animationDelay: "0.3s" }}
         >
-          A decentralized trust layer delivering attestations and reputation for the machine driven internet.
+          A decentralized trust layer for verifiable reputation across the machine-driven internet.
         </p>
         <p
           className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground leading-7 animate-fade-in-up"

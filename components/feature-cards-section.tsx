@@ -10,30 +10,31 @@ import {
 
 const features = [
   {
-    label: "LIVE (PREVIEW)",
-    title: "OMAChain and OMA",
+    label: "LIVE",
+    title: "OMAChain",
     description:
-      "OMATrust runs on OMAChain, OMA3's new Layer 2 powered by the OMA token.  OMAChain allows OMA3 to bring web2 simplicity to decentralized trust.",
-    icon: BadgeCheck,
-    href: "#",
+      "OMATrust runs on OMAChain, OMA3's Ethereum Layer 2. OMAChain provides low-cost transactions and a Web2-style user experience while preserving decentralized trust.",
+    icon: Network,
+    href: "https://github.com/oma3dao/omatrust-docs/blob/main/whitepaper/omatrust-whitepaper.md",
     accentColor: "hsl(186 100% 50%)",
-  },
-  {
-    label: "COMING SOON",
-    title: "OMATrust Identity Registry",
-    description:
-      "A standards-based identity registry coming soon on OMAChain. The OMATrust Registry extends ERC-8004 to bring app store-level trust to identity and discoverability.",
-    icon: IdCard,
-    href: "https://registry.omatrust.org",
-    accentColor: "hsl(220 80% 60%)",
   },
   {
     label: "COMING SOON",
     title: "Cross-Chain Support",
     description:
-      "OMATrust can be deployed on any EAS-compatible chain, enabling portable trust signals across ecosystems. OMATrust schemas can be deployed to non-EAS attestations easily.",
-    icon: Network,
-    href: "#",
+      "OMATrust is designed to run anywhere. Interested in bringing OMATrust to your chain? Contact OMA3 to discuss deployment to your network.",
+    icon: IdCard,
+    href: "https://www.oma3.org/#contact",
+    linkText: "Contact us",
+    accentColor: "hsl(220 80% 60%)",
+  },
+  {
+    label: "REPUBLIC SALE",
+    title: "OMA Token",
+    description:
+      "The OMA token powers OMAChain and supports the long-term growth of the OMATrust ecosystem. Learn about the current Republic token offering.",
+    icon: BadgeCheck,
+    href: "https://republic.com/oma3",
     accentColor: "hsl(260 65% 55%)",
   },
 ]
@@ -63,8 +64,8 @@ export function FeatureCardsSection() {
           <span className="text-xs font-mono tracking-[0.2em] text-primary mb-4 block">
             INFRASTRUCTURE
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground text-balance">
-            Built for the next era of trust
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground text-balance">
+            The platform behind OMATrust
           </h2>
         </div>
 
@@ -115,7 +116,7 @@ export function FeatureCardsSection() {
                   </p>
 
                   <div className="mt-6 inline-flex items-center gap-1 text-xs text-primary/80 opacity-0 transition-all group-hover:opacity-100">
-                    Learn more <ArrowUpRight size={12} />
+                    {feature.linkText || "Learn more"} <ArrowUpRight size={12} />
                   </div>
                 </div>
               </a>

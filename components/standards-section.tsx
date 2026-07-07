@@ -6,7 +6,7 @@ const standards = [
   {
     name: "W3C DID",
     shape: "circle",
-    description: "Agent identity and reputation standard",
+    description: "Decentralized identity standard",
     href: "https://www.w3.org/TR/did-core/",
   },
   {
@@ -65,7 +65,7 @@ export function StandardsSection() {
             COMPATIBILITY
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground text-balance">
-            Compatibility with standards
+            Built on open standards
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-7 max-w-2xl">
             OMATrust aligns with emerging agentic standards like x402 and ERC-8004, as well as established standards like W3C DID, JSON Schema, and many more.

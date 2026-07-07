@@ -5,14 +5,11 @@ import { useState, useEffect } from "react"
 const ROTATE_DURATION_MS = 2000
 
 const phrases = [
-  "Online Services",
   "Websites",
-  "Apps",
   "Downloads",
   "APIs",
   "x402",
   "MCP",
-  "A2A",
   "Smart Contracts",
 ]
 
