@@ -178,12 +178,12 @@ function HeroSection() {
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
       <div className={`relative mx-auto w-full max-w-7xl text-center transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <StatusBadge icon={Receipt}>x402 receipt authorization</StatusBadge>
+        <StatusBadge icon={Receipt}>x402 signer authorization</StatusBadge>
         <h1 className="mx-auto mt-6 max-w-5xl text-4xl font-bold leading-tight tracking-tight text-foreground text-balance md:text-6xl lg:text-7xl">
-          x402 for machine payments — <br />OMATrust for machine trust
+          Authorization for x402 Signing Keys
         </h1>
         <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground md:text-xl">
-          OMATrust ties x402 Signed Receipts to your service, preventing identity attacks that can impact your online reputation.
+          Implement the x402 Signed Offer and Receipt extension with verified signing keys and portable reputation.
         </p>
         <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
@@ -192,7 +192,7 @@ function HeroSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-8px_hsl(186_100%_50%_/_0.55)]"
           >
-            Protect your x402 service
+            Manage signing keys
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
           <a
@@ -421,8 +421,8 @@ const carouselSteps = [
   {
     step: "01",
     label: "Receipt Proofs",
-    title: "How do you know which reviews are legitimate?",
-    text: "x402 receipts prove a service transaction. Reviews without receipts are filtered out.",
+    title: "Verified receipts enable trustworthy reviews",
+    text: "x402 receipts prove a service transaction. Reviews without receipts can be filtered out.",
     diagram: DiagramStep0,
   },
   {
@@ -434,23 +434,23 @@ const carouselSteps = [
   },
   {
     step: "03",
-    label: "Authorization check",
-    title: "Solution:  keys must be authorized",
-    text: "Only keys publicly authorized by the service are accepted.",
+    label: "Authorization Check",
+    title: "Solution: Key authorization",
+    text: "Services publicly authorize signing keys so only legitimate signatures are accepted.",
     diagram: DiagramStep2,
   },
   {
     step: "04",
-    label: "Verified trust",
+    label: "Verified Trust",
     title: "Only verified reviews remain",
     text: "Forged receipts are rejected before they can affect your reputation.",
     diagram: DiagramStep3,
   },
   {
     step: "05",
-    label: "reputation",
+    label: "Reputation",
     title: "Your reputation portfolio",
-    text: "Key authorization is just one of many OMATrust reputation signals.",
+    text: "Key authorization is the first step to managing your reputation with OMATrust.",
     diagram: DiagramStep4,
   },
 ]
@@ -466,7 +466,7 @@ function CarouselSection() {
         <div className="text-center mb-8">
           <span className="text-xs font-mono tracking-[0.2em] text-primary mb-3 block">OMATRUST AND X402</span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-            x402 receipts need authorization
+            x402 receipts and key authorization
           </h2>
         </div>
 
@@ -569,7 +569,7 @@ function ComparisonSection() {
             A valid signature only proves the math
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-7">
-            x402 receipts are powerful because they are portable proof of interaction. OMATrust makes them trustworthy by checking the signer against the service&apos;s authorization record.
+            x402 receipts are portable proofs of interaction. OMATrust makes them forge-resistant.
           </p>
         </div>
         <div className={`mt-12 grid gap-5 md:grid-cols-3 transition-all duration-1000 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -600,7 +600,7 @@ function LevelsSection() {
       label: "LEVEL 1",
       title: "Your domain proves your keys",
       description:
-        "Create a DNS TXT record or host a DID document at your domain listing your authorized signing keys. Any receipt signed by an unlisted key fails authorization \u2014 even if the signature is valid.",
+        "Create a DNS TXT record or host a DID document at your domain listing your authorized signing keys. Any receipt signed by an unlisted key fails authorization, even if the signature is valid.",
       detail: "Prevents unrelated signers from claiming a service identity. Gives verifiers a live ownership check.",
     },
     {
@@ -618,7 +618,7 @@ function LevelsSection() {
       label: "LEVEL 3",
       title: "Revoke a compromised key instantly",
       description:
-        "Enterprise key binding lets you broadcast revocation. Every verifier in the ecosystem rejects the compromised key immediately.",
+        "Enterprise key bindings let you broadcast key purpose and revocation for the ultimate in authorization.",
       detail: "Supports regulated environments, security policy enforcement, and key lifecycle management.",
     },
   ]
@@ -630,7 +630,7 @@ function LevelsSection() {
         <div className={`mx-auto max-w-3xl text-center transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs font-mono tracking-[0.2em] text-primary mb-4 block">PROGRESSIVE AUTHORIZATION</span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground leading-[1.1] text-balance">
-            Three levels of key authorization
+            The 3 levels of key authorization
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-7 max-w-2xl mx-auto">
             Each level addresses a specific failure mode. Start with Level 1 and add layers as your security requirements grow.
@@ -678,6 +678,11 @@ function BenefitsSection() {
   return (
     <section ref={ref} className="relative py-24">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px animated-gradient-line" />
+      <div className={`mx-auto max-w-7xl px-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          A more trustworthy x402 ecosystem
+        </h2>
+      </div>
       <div className={`mx-auto max-w-7xl px-6 grid gap-5 md:grid-cols-3 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         {cards.map((item, index) => (
           <div
@@ -696,6 +701,30 @@ function BenefitsSection() {
 }
 
 // ---------------------------------------------------------------------------
+// Authority / Credibility
+// ---------------------------------------------------------------------------
+
+function AuthoritySection() {
+  const { ref, visible } = useInView(0.2)
+
+  return (
+    <section ref={ref} className="relative py-24">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px animated-gradient-line" />
+      <div className={`mx-auto max-w-7xl px-6 text-center transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <h2 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
+          Built by OMA3
+        </h2>
+        <p className="mt-3 text-base leading-7 text-muted-foreground md:text-lg">
+          Authors of the x402 Signed Offer and Receipt extension.
+          <br />
+          Associate Member of the x402 Foundation.
+        </p>
+      </div>
+    </section>
+  )
+}
+
+// ---------------------------------------------------------------------------
 // CTA
 // ---------------------------------------------------------------------------
 
@@ -704,14 +733,15 @@ function CtaSection() {
 
   return (
     <section id="x402-start" ref={ref} className="relative min-h-[60vh] overflow-hidden py-28">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px animated-gradient-line" />
       <div className="absolute inset-0 grid-bg opacity-10" />
       <div className={`relative mx-auto flex max-w-4xl flex-col items-center px-6 text-center transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <IconNode icon={Shield} label="OMATrust shield" tone="primary" size="lg" />
         <h2 className="mt-8 text-4xl font-bold tracking-tight text-foreground md:text-6xl">
-          Protect your x402 service reputation
+          Authorization is just the beginning
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-          Turn signed receipts into verified trust signals with service identity, authorized signing keys, witness continuity, and revocation controls.
+          OMATrust lets you respond to reviews, publish security audits, demonstrate compliance, and build your service reputation.
         </p>
         <div className="mt-9 flex flex-col gap-4 sm:flex-row">
           <a
@@ -720,16 +750,15 @@ function CtaSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-8px_hsl(186_100%_50%_/_0.55)]"
           >
-            Manage keys
+            Start now
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
           <a
-            href={portalLink("/publish")}
-            target="_blank"
+            href={"https://www.omatrust.org"}
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-7 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/20"
           >
-            Publish trust profile
+            Learn more
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
@@ -751,6 +780,7 @@ export function X402LandingPage() {
       <ComparisonSection />
       <LevelsSection />
       <BenefitsSection />
+      <AuthoritySection />
       <CtaSection />
     </main>
   )

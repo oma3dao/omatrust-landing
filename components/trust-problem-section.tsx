@@ -51,10 +51,7 @@ export function TrustProblemSection() {
             }`}
           >
             <p className="text-lg text-muted-foreground leading-7">
-              Despite rapid growth, the open internet still struggles with trust. There is no universal reputation system that works across all service types and platforms.
-            </p>
-            <p className="mt-6 text-lg text-muted-foreground leading-7">
-              OMATrust is a shared trust layer for all internet-native services, not just marketplaces and app stores.
+              The open internet lacks a reputation system that works across all services and platforms. As AI agents begin transacting directly with internet services, trust signals must become interoperable, verifiable, and machine-readable.
             </p>
           </div>
         </div>
