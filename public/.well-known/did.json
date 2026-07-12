@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/secp256k1-2019/v1"
+  ],
+  "id": "did:web:omatrust.org",
+  "verificationMethod": [
+    {
+      "id": "did:web:omatrust.org#key-1",
+      "type": "EcdsaSecp256k1RecoveryMethod2020",
+      "controller": "did:web:omatrust.org",
+      "blockchainAccountId": "eip155:6623:0xd434dd2861af0e1c5cd9a4df171a9dfa45cd7d29"
+    }
+  ],
+  "assertionMethod": [
+    "did:web:omatrust.org#key-1"
+  ]
+}
