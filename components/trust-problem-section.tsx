@@ -73,12 +73,12 @@ export function TrustProblemSection() {
           </div>
           <div className="border-l-2 border-primary/30 pl-5 pr-2">
             <h3 className="text-xl font-semibold text-foreground leading-tight">
-              No Trust for Internet-Native Services
+              No Internet-Native Trust
             </h3>
             <p className="mt-3 text-base text-zinc-300 leading-relaxed">
               Existing trust models focus on e-commerce and app stores. APIs,
-              websites, and decentralized services lack standardized,
-              verifiable trust signals.
+              websites, decentralized services, and software artifacts lack
+              standardized, verifiable trust signals.
             </p>
           </div>
         </div>
