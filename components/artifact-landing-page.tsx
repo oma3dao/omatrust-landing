@@ -140,7 +140,7 @@ function ArtifactNav() {
   ]
 
   return (
-    <nav className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"}`}>
+    <nav className={`fixed inset-x-0 top-10 z-50 transition-all duration-500 ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="/" className="text-xl font-bold tracking-tight text-foreground">OMATrust</a>
         <div className="hidden items-center gap-7 md:flex">
