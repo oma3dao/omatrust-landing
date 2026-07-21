@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 export function TokenSaleBanner() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] w-full overflow-hidden">
+    <div className="fixed top-0 left-0 right-0 z-[60] w-full overflow-hidden border-b border-border/60 bg-background">
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 animate-shimmer" />
       <div className="relative flex items-center justify-center gap-3 px-4 py-2.5">
