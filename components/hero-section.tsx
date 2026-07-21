@@ -56,30 +56,21 @@ export function HeroSection() {
           className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground leading-7 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Publish trust data on services <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Manage trust for your own services
+          <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Trust for internet services <span className="mx-2.5 inline-block h-2 w-2 rounded-full bg-primary align-middle" /> Trust for software artifacts
         </p>
 
-        {/* CTA buttons */}
+        {/* CTA button */}
         <div
           className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
           style={{ animationDelay: "0.5s" }}
         >
-          <a
-            href={portalLink("/publish")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"
-          >
-            Publish Trust
-            <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-          </a>
           <a
             href={portalLink("/?action=signin")}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_-5px_hsl(186_100%_50%_/_0.4)] active:scale-[0.98]"
           >
-            Manage Trust
+            Get Started
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>

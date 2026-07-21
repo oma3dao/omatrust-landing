@@ -66,7 +66,7 @@ export function TrustSolutionSection() {
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-7 max-w-2xl mx-auto">
             OMATrust replaces fragmented, platform-specific trust with a shared trust framework.
-            Any service can earn, carry, and prove its reputation through verifiable on-chain trust signals.
+            Any service or digital artifact can earn, carry, and prove its reputation through verifiable on-chain trust signals.
           </p>
         </div>
 

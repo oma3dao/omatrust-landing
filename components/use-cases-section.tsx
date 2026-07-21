@@ -6,6 +6,12 @@ import { portalLink } from "@/lib/portal-url"
 
 const useCases = [
   {
+    title: "Verify Digital Artifacts",
+    description: "Establish trust for MD files, PDFs, plugins, and binaries",
+    href: "/artifact",
+    linkText: "Learn more",
+  },
+  {
     title: "x402 Signed Receipts",
     description: "Confirm that signed receipts come from authorized services",
     href: "/x402",
@@ -33,12 +39,6 @@ const useCases = [
     title: "Submit User Reviews",
     description: "Publish verifiable reviews and ratings for apps and services",
     href: portalLink("/publish?type=user-review"),
-    linkText: "Get Started",
-  },
-  {
-    title: "Link Identities",
-    description: "Attest that two social accounts are under your ownership",
-    href: portalLink("/publish?type=linked-identifier"),
     linkText: "Get Started",
   },
 ]
