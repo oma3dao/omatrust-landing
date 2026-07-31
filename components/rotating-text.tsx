@@ -8,9 +8,10 @@ const phrases = [
   "x402",
   "APIs",
   "PDFs",
-  "skills.md",
+  "SKILL.md",
   "Binaries",
   "Smart Contracts",
+  "MPAS",
 ]
 
 export function RotatingText() {

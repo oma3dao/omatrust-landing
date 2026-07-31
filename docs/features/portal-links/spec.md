@@ -29,7 +29,7 @@ The OMATrust landing page (`www.omatrust.org`) links to the OMATrust reputation 
 | Verify x402 Receipts     | `{PORTAL_URL}/publish?type=receipt`              |
 | Authorize Service Keys   | `{PORTAL_URL}/publish?type=key-binding`          |
 | Publish Security Audits  | `{PORTAL_URL}/publish?type=security-assessment`  |
-| Issue Certifications     | `{PORTAL_URL}/publish?type=certification`        |
+| Secure MPAS              | `https://mpas.oma3.org`                          |
 | Enable Portable Reviews  | `{PORTAL_URL}/publish?type=user-review`          |
 
 ### Developer links section
@@ -44,6 +44,7 @@ These links are hardcoded and should remain unchanged:
 
 | Element                  | Expected URL                       |
 | ------------------------ | ---------------------------------- |
+| Secure MPAS (use cases)  | `https://github.com/oma3dao/oma3-projects/blob/main/mpas.md` |
 | Registry (feature cards) | `https://registry.omatrust.org`    |
 | Registry (footer)        | `https://registry.omatrust.org`    |
 | Developer Docs           | `https://docs.omatrust.org`        |
