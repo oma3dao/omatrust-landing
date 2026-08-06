@@ -30,15 +30,15 @@ const useCases = [
     linkText: "Get Started",
   },
   {
+    title: "Secure MPAS",
+    description: "OMATrust is the trust framework for MPAS",
+    href: "https://github.com/oma3dao/oma3-projects/blob/main/mpas.md",
+    linkText: "Learn more",
+  },
+  {
     title: "Issue Certifications",
     description: "Create verifiable certifications for applications and services",
     href: portalLink("/publish?type=certification"),
-    linkText: "Get Started",
-  },
-  {
-    title: "Submit User Reviews",
-    description: "Publish verifiable reviews and ratings for apps and services",
-    href: portalLink("/publish?type=user-review"),
     linkText: "Get Started",
   },
 ]

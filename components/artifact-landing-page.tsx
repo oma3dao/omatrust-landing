@@ -242,7 +242,7 @@ function ProblemSection() {
       description: "Attackers impersonating investors tricked users into installing malware disguised as video conferencing apps.",
     },
     {
-      title: "Prompt injections in skills.md",
+      title: "Prompt injections in SKILL.md",
       description: "A malicious skill can hijack an AI agent’s behavior, exfiltrate sensitive data, or trigger unauthorized actions.",
     },
   ]
@@ -638,7 +638,7 @@ function UseCasesSection() {
     {
       icon: Layers,
       title: "Agent Configuration Files",
-      description: "Verify who published a skills.md or agent configuration file before allowing an AI agent to use it.",
+      description: "Verify who published a SKILL.md or agent configuration file before allowing an AI agent to use it.",
     },
     {
       icon: Bot,
